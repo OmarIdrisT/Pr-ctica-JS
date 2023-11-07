@@ -1,5 +1,8 @@
 let numeroRandom = Math.floor(Math.random()*100000);
 let numeroUsuari = document.getElementById("numero");
+let numeroUsuariChain = numeroUsuari.split("");
+let numeroRandomChain = numeroRandom.split("");
+
 let tries = 0;
 
 function numblejs() {
@@ -12,6 +15,9 @@ function numblejs() {
                 newdiv.className = "newdiv";
                 document.getElementById("intentos").appendChild(newdiv);
                 let mensaje = document.getElementById("mensaje");
+
+                if (numeroUsuariChain[i] == numeroRandomChain[i])
+                document.getElementsByClassName("newdiv").style.backg
             }
             tries++
 
@@ -33,7 +39,7 @@ function numblejs() {
                     break
                 }
                 case 5: {
-                    mensaje.innerHTML = "Ya no te quedan intentos";
+                    mensaje.innerHTML = "Ya no te quedan intentos...";
                     break
                 }    
             }
