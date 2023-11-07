@@ -2,8 +2,6 @@ let numeroRandom = Math.floor(Math.random()*100000);
 let numeroUsuari = document.getElementById("numero");
 let numeroUsuariChain = numeroUsuari.split("");
 let numeroRandomChain = numeroRandom.split("");
-let 
-
 let tries = 0;
 let aciertos = 0;
 
@@ -34,13 +32,14 @@ function numblejs() {
             } 
             tries++
             document.getElementById("numero").value = "";    
-
-            if (aciertos == 5) {
-                    mensaje.innerHTML = "Has acertado!";
-                    document.getElementById("mensaje").style.backgroundColor = "green";
+        }
+        
+        if (aciertos == 5) {
+                mensaje.innerHTML = "Has acertado!";
+                document.getElementById("mensaje").style.backgroundColor = "green";
             }
-            else {    
-                    switch (tries) {
+        else {    
+                switch (tries) {
                         case 1: {
                             mensaje.innerHTML = "Segundo intento, suerte!";
                             break
