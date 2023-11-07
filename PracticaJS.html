@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Adivina el número</title>
+        <script src="./PracticaJS.js"></script> 
         <link rel="stylesheet" type="text/css" href="PracticaJS.css">
     </head>
     <body>
@@ -11,47 +12,23 @@
         </header>
         <main>
             <div id="pantalla">
-                <div class="numero_pantalla">*</div>
-                <div class="numero_pantalla">*</div>
-                <div class="numero_pantalla">*</div>
-                <div class="numero_pantalla">*</div>
-                <div class="numero_pantalla">*</div>
+                <div class="numero_pantalla"><p class="numero_pantalla1">*</p></div>
+                <div class="numero_pantalla"><p class="numero_pantalla1">*</p></div>
+                <div class="numero_pantalla"><p class="numero_pantalla1">*</p></div>
+                <div class="numero_pantalla"><p class="numero_pantalla1">*</p></div>
+                <div class="numero_pantalla"><p class="numero_pantalla1">*</p></div>
             </div>
             <div id="introducir_numero">
                 <h2 id="titulo_introducir">Escribe aquí un número</h2>
                 <form id="form_introducir_numero">
-                    <input type="text" id="numero" aria-required="true">
-                    <button type="submit" id="boton_comprobar">Comprobar</button>
+                    <input type="text" id="numero" aria-required="true" placeholder="01234">
+                    <hr id="separacion_boton">
+                    <button type="button" onclick="numblejs()" id="boton_comprobar">Comprobar</button>
                 </form>
             </div>
-            <div id="mensaje"></div>
-            <div id="recuadros">
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-                <div class="recuadro_numero"></div>
-            </div>
+            <div id="mensaje"> Primer intento, suerte!</div>
+            <div id="intentos">
+            <div>
         </main>
     </body>
 </html>

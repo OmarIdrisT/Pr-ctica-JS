@@ -30,15 +30,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color:white;
 }
 
 #introducir_numero {
     border-style:solid;
     display:flex;
     flex-direction: column;
-    width: 31%;
+    width: 540px;
     height: 180px;
-    margin-left:34.3%;
+    margin-left:35%;
     margin-top:25px;
     border-color:rgb(13, 144, 231);
     border-radius: 10px;
@@ -61,11 +62,15 @@
 #numero {
     height: 50px;
     font-size: 25px;
-    border-bottom-style:solid;
-    border-bottom-color:rgb(13, 144, 231);
-    border-left-color: white;
-    border-right-color:white;
-    border-top-color:white;
+    border-style: hidden;
+}
+
+#separacion_boton {
+    margin-top: 0px;
+    border-color: rgb(13, 144, 231);
+    border-style: solid;
+    height: 1px;
+    width: 505px;
 }
 
 #boton_comprobar {
@@ -84,28 +89,38 @@
 }
 
 #mensaje {
-
+    display: flex;
+    margin-top: 25px;
+    margin-left: 35%;
+    background-color: red;
+    width: 550px;
+    height: 60px;
+    border-radius: 10px;
+    color:white;
+    font-size: 24px;
+    align-items: center;
+    
 }
 
-#recuadros {
+#intentos {
     display:flex;
     flex-wrap:wrap;
     flex-direction: row;
-    height: 520px;
-    width: 30%;
-    margin-left: 35.5%;
+    width: 550px;
+    margin-left: 35%;
     margin-top: 25px;
 }
 
-.recuadro_numero {
+.newdiv {
     background-color: gray;
     border-radius:10px;
     width:100px;
     height:100px;
     margin-left: 5px;
     margin-right: 5px;
+    margin-top: 1%;
+    font-size:24px;
     display:flex;
     justify-content: center;
     align-items: center;
-    font-size:24px;
 }
