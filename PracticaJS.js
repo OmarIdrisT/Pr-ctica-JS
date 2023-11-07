@@ -4,7 +4,7 @@ let tries = 0;
 
 function numblejs() {
 
-        if (tries < 5) {
+        if (tries < 5 || numeroUsuari != numeroRandom) {
 
             for (let i = 0; i < 5; i++) {
 
@@ -13,7 +13,7 @@ function numblejs() {
                 document.getElementById("intentos").appendChild(newdiv);
                 let mensaje = document.getElementById("mensaje");
             }
-            tries = tries + 1
+            tries++
 
             switch (tries) {
                 case 1: {
