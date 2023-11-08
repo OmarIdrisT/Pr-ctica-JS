@@ -28,20 +28,7 @@ function numblejs() {
                                         newdiv.style.backgroundColor = "yellow";
                                 }
                         }
-                }
-            } 
-        }
-        
-        tries++;
-        document.getElementById("numero").value = "";    
-
-        if (aciertos === 5) {
-                mensaje.innerHTML = "Has acertado!";
-                mensaje.style.backgroundColor = "green";
-                tries = 5;
-        }
-
-        else {    
+                } 
                 switch (tries) {
                     case 1: {
                         mensaje.innerHTML = "Segundo intento, suerte!";
@@ -64,5 +51,15 @@ function numblejs() {
                         break;
                     }    
                 }
-            }
+            } 
+        }
+        
+        tries++;
+        document.getElementById("numero").value = "";    
+
+        if (aciertos === 5) {
+                mensaje.innerHTML = "Has acertado!";
+                mensaje.style.backgroundColor = "green";
+                tries = 5;
+        }
 }
