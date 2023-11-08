@@ -15,24 +15,32 @@ function numblejs() {
             console.log(numeroUsuari)
 
             for (let i = 0; i < 5; i++) {
+                setTimeout (function () {
+                    const newdiv = document.createElement("div");
+                    newdiv.className = "newdiv";
+                    newdiv.style.width = "50px";
+                    newdiv.style.height = "50px";
+                    newdiv.style.transition = "width 0.5s, height 0.5s";
+                    setTimeout (function () {
+                        newdiv.style.width = "100px";
+                        newdiv.style.height = "100px";
+                        }, 19);
+                    document.getElementById("intentos").appendChild(newdiv);
+                    newdiv.innerHTML = numeroUsuariChain[i]; 
 
-                const newdiv = document.createElement("div");
-                newdiv.className = "newdiv";
-                document.getElementById("intentos").appendChild(newdiv);
-                newdiv.innerHTML = numeroUsuariChain[i];    
+                    if (numeroUsuariChain[i] == numeroRandomChain[i]) {
+                            newdiv.style.backgroundColor = "green";
+                            aciertos++;
+                    }
 
-                if (numeroUsuariChain[i] == numeroRandomChain[i]) {
-                        newdiv.style.backgroundColor = "green";
-                        aciertos++;
-                }
-
-                else {
-                        for (let j = 0; j < 5; j++) {
-                                if (numeroUsuariChain[i] === numeroRandomChain[j]) {
-                                        newdiv.style.backgroundColor = "yellow";
-                                }
-                        }
-                } 
+                    else {
+                            for (let j = 0; j < 5; j++) {
+                                    if (numeroUsuariChain[i] === numeroRandomChain[j]) {
+                                            newdiv.style.backgroundColor = "yellow";
+                                    }
+                            }
+                    } 
+                }, i * 300);
             }
         } 
         
