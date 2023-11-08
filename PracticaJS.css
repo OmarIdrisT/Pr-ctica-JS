@@ -112,8 +112,8 @@
     margin-top:25px;
     margin-left:auto;
     margin-right:auto;
-    width: 550px;
-    height: 400px;
+    width: 0;
+    height: 0;
 }
 
 #intentos {

@@ -45,7 +45,13 @@ function numblejs() {
                 document.getElementById("mensaje").style.backgroundColor = "green";
                 let gifVictoria = document.createElement("img");
                 gifVictoria.src="penguinz0-yeah-baby.gif";
+                document.getElementById("gif").style.width = "550px";
+                document.getElementById("gif").style.height = "400px";
                 document.getElementById("gif").appendChild(gifVictoria);
+                const resultat = document.getElementsByClassName("numero_pantalla");
+                for (let k = 0; k < 5; k ++) {
+                    resultat[k].innerHTML = numeroRandomChain[k];
+                }
         }
 
         else {
@@ -68,6 +74,8 @@ function numblejs() {
                 }
                 case 5: {
                     document.getElementById("mensaje").innerHTML = "Ya no te quedan intentos...";
+                    document.getElementById("gif").style.width = "550px";
+                    document.getElementById("gif").style.height = "400px";
                     let gifDerrota = document.createElement("img");
                     gifDerrota.src="ataud.gif";
                     document.getElementById("gif").appendChild(gifDerrota);
