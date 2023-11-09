@@ -10,6 +10,7 @@
     font-size:40px;
 }
 
+/* Sección CODIGO */
 #pantalla {
     height: 100px;
     width: 50%;
@@ -34,6 +35,7 @@
     color:white;
 }
 
+/* Sección COMPROBAR */
 #introducir_numero {
     border-style:solid;
     display:flex;
@@ -89,6 +91,7 @@
     transform:scale(1.03);
 }
 
+/* Sección INFO */
 #mensaje {
     display: flex;
     margin-top: 25px;
@@ -104,6 +107,7 @@
     
 }
 
+/*Sección  RESULT */
 #gif {
     display:flex;
     justify-content: center;
@@ -127,7 +131,7 @@
 }
 
 .newdiv {
-    background-color: gray;
+    background-color: #99A3A4;
     border-radius:10px;
     color:white;
     width:100px;
@@ -139,4 +143,5 @@
     display:flex;
     justify-content: center;
     align-items: center;
+    transition: opacity 0.5s ease-in-out;
 }
