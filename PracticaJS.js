@@ -31,13 +31,13 @@ function numblejs() {
                         document.getElementById("intentos").appendChild(newdiv);
                         newdiv.innerHTML = numeroUsuariChain[i]; 
                 
-                //Si en la misma posición tanto el número introducido como el aleatorio tienen el mismo dígito, contaremos un acierto y el recuadro se mostrará verde.        
+                        //Si en la misma posición tanto el número introducido como el aleatorio tienen el mismo dígito, contaremos un acierto y el recuadro se mostrará verde.        
                         if (numeroUsuariChain[i] === numeroRandomChain[i]) {
 
                                 newdiv.style.backgroundColor = "green";
                                 aciertos++;
                         }
-                //Si no, verificamos si el número aleatorio contiene ese dígito en otra posición.        
+                        //Si no, verificamos si el número aleatorio contiene ese dígito en otra posición.        
                         else {
                                 for (let j = 0; j < 5; j++) {
 
@@ -47,7 +47,7 @@ function numblejs() {
                                 }
                         } 
                   
-                //Si en un mismo intento se han acertado los 5 números, se mostrarán un mensaje y un gif indicando que hemos ganado.        
+                        //Si en un mismo intento se han acertado los 5 números, se mostrarán un mensaje y un gif indicando que hemos ganado.        
                         if (aciertos === 5) {
                             document.getElementById("mensaje").innerHTML = "Has acertado!";
                             document.getElementById("mensaje").style.backgroundColor = "green";
@@ -57,20 +57,21 @@ function numblejs() {
                             document.getElementById("gif").style.height = "400px";
                             document.getElementById("gif").appendChild(gifVictoria);
   
-                //Además, mostraremos en la parte superior el número aleatorio que se había generado.            
+                            //Además, mostraremos en la parte superior (sección CODIGO) el número aleatorio que se había generado.            
                             for (let k = 0; k < 5; k ++) {
                                 resultat[k].innerHTML = numeroRandomChain[k];
                             }
                 
-                //Indicamos que se ha llegado al máximo de intentos para así detener el programa.            
+                            //Indicamos que se ha llegado al máximo de intentos para así detener el programa.            
                             tries = 5;
-                    }
+                       }
                 }
-            //Contamos un intento y reiniciamos el contenido del campo después de cada input.   
+                    
+                //Contamos un intento y reiniciamos el contenido del campo después de cada input.   
                 tries++;
                 document.getElementById("numero").value = ""; 
             
-            //Con un "switch" definimos los distintos mensajes que irán apareciendo mientras se avanza en el juego (sin ganar).    
+                //Con un "switch" definimos los distintos mensajes que irán apareciendo mientras se avanza en el juego (sin ganar).    
                 switch (tries) {
                     case 1: {
                         document.getElementById("mensaje").innerHTML = "Segundo intento, suerte!";
@@ -95,6 +96,8 @@ function numblejs() {
                         let gifDerrota = document.createElement("img");
                         gifDerrota.src="ataud.gif";
                         document.getElementById("gif").appendChild(gifDerrota);
+
+                        //Como en el caso de haber ganado, hacemos que el número aleatorio generado aparezca en la sección CODIGO.    
                         for (let k = 0; k < 5; k ++) {
                             resultat[k].innerHTML = numeroRandomChain[k];
                         }
