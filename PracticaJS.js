@@ -103,7 +103,7 @@ function numblejs() {
                 } 
             } 
 
-            //En caso de no haber intentado introducir un valor que no cumpla las condiciones impuestas, se nos mostrará este mensaje.
+            //En caso de haber intentado introducir un valor que no cumpla las condiciones impuestas, se nos mostrará este mensaje.
             else {
                 document.getElementById("mensaje").innerHTML = "Espabila hombre, que tienes que poner 5 números."
             }
