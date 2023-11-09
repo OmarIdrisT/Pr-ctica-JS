@@ -6,7 +6,7 @@ console.log(numeroRandom);
 
 function numblejs() {
 
-        if (document.getElementById("numero").value.length === 5) {
+        if (document.getElementById("numero").value.length === 5 && !isNaN(document.getElementById("numero").value)) {
             aciertos = 0;
         
             if (tries < 5) {
