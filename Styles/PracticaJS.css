@@ -1,0 +1,189 @@
+* {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+#titulo {
+    color:blue;
+    text-align: center;
+    font-size:40px;
+}
+
+/* Sección CODIGO */
+#pantalla {
+    height: 100px;
+    width: 50%;
+    margin: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.numero_pantalla {
+    height:100px;
+    width:100px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    background-color: rgb(13, 144, 231);
+    font-size:24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+/* Sección COMPROBAR */
+#introducir_numero {
+    border-style:solid;
+    display:flex;
+    flex-direction: column;
+    width: 540px;
+    height: 180px;
+    margin: auto;
+    margin-top:25px;
+    border-color:rgb(13, 144, 231);
+    border-radius: 10px;
+}
+
+#titulo_introducir {
+    color: rgb(13, 144, 231);
+    margin-left:15px;
+    font-size: 24px;
+}
+
+#form_introducir_numero {
+    height:100px;
+    margin-left:15px;
+    margin-right:15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#numero {
+    height: 50px;
+    font-size: 25px;
+    border-style: hidden;
+}
+
+#separacion_boton {
+    margin-top: 0px;
+    border-color: rgb(13, 144, 231);
+    border-style: solid;
+    height: 1px;
+    width: 505px;
+}
+
+#boton_comprobar {
+    margin-top: 10px;
+    height: 60px;
+    font-size: 25px;
+    color:white;
+    background-color: rgb(13, 144, 231);
+    cursor:pointer;
+    border-radius:5px;
+    transition: 0.15s ease-in-out;
+}
+
+#boton_comprobar:hover {
+    transform:scale(1.03);
+}
+
+/* Sección INFO */
+#mensaje {
+    display: flex;
+    margin-top: 25px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: red;
+    width: 550px;
+    height: 60px;
+    border-radius: 10px;
+    color:white;
+    font-size: 24px;
+    align-items: center;
+    
+}
+
+/*Sección  RESULT */
+#gif {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top:25px;
+    margin-left:auto;
+    margin-right:auto;
+    width: 0;
+    height: 0;
+}
+
+
+#intentos {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    width: 550px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:25px;
+}
+
+.newdiv {
+    background-color: #99A3A4;
+    border-radius:10px;
+    color:white;
+    width:100px;
+    height:100px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 1%;
+    font-size:24px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    animation: Try 2s ease 0s 1 normal forwards;
+}
+
+@keyframes Try {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(65px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+}
