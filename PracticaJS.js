@@ -1,6 +1,7 @@
 //Generamos el número aleatorio y le aplicamos un "split" para separarlo por dígitos. Además, nos aseguramos de que siempre tenga 5 dígitos, al delimitar el rango de números.
 let numeroRandom = Math.floor((Math.random() * (99999 - 10000 + 1)) + 10000);
 let numeroRandomChain = numeroRandom.toString().split("");
+console.log(numeroRandom)
 
 //Definimos "resultat", de cara a usarlo más adelante para mostrar el número aleatorio generado.
 const resultat = document.getElementsByClassName("numero_pantalla");
